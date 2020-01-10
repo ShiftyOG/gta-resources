@@ -29,7 +29,7 @@ Citizen.CreateThread(function()
     for k, v in pairs(Config.Teleporters) do
         local marker = {
             name = v.name .. '_teleporter',
-            type = 2,
+            type = v.type or 2,
             coords = v.coords,
             colour = v.colour,
             size = vector3(2.0, 2.0, 2.0),
